@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>身勝手の極意 — ULTRA INSTINCT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&family=Zen+Dots&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="lo-kanji">悟</div>
+  <div class="lo-bar"><i id="lo-fill"></i></div>
+  <div class="lo-txt">エネルギー充填 <span id="lo-pct">0</span>%</div>
+</div>
+
+<section id="stage">
+  <canvas id="goku" width="960" height="540"></canvas>
+  <canvas id="bolts"></canvas>
+  <div id="flash"></div>
+  <div id="vignette"></div>
+  <div id="scanlines"></div>
+
+  <!-- vertical japanese rails -->
+  <div class="rail rail-l">限界を超えろ</div>
+  <div class="rail rail-r">最終形態・銀髪</div>
+
+  <div id="hud">
+    <div class="hud-row"><span class="lbl">FORM</span><span id="hud-form">基本形態</span></div>
+    <div class="hud-row"><span class="lbl">POWER</span><span id="hud-power">0.0%</span></div>
+    <div class="meter"><i id="hud-meter"></i></div>
+  </div>
+
+  <div id="copy">
+    <div class="kicker">ドラゴンボール超 / EPISODE 129</div>
+    <h1 class="title">
+      <span class="t-jp">身勝手の極意</span>
+      <span class="t-en">ULTRA&nbsp;INSTINCT</span>
+    </h1>
+    <p class="sub">極限を越えた者のみが到達する、銀の領域。</p>
+  </div>
+
+  <div id="awaken">
+    <span class="aw-jp">覚醒</span>
+    <span class="aw-en">AWAKENED</span>
+  </div>
+
+  <div id="hint">
+    <span class="h-jp">スクロールして覚醒せよ</span>
+    <span class="h-en">SCROLL TO AWAKEN</span>
+    <svg viewBox="0 0 24 40" class="h-arrow"><path d="M12 2v30M5 26l7 8 7-8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+  </div>
+
+  <div id="track-hint">
+    <span>マウスを動かせ — HE FOLLOWS YOU</span>
+  </div>
+</section>
+
+<div id="scroller"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
